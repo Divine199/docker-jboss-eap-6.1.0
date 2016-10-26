@@ -1,4 +1,4 @@
-riginally from: http://blog.couchbase.com/2015/december/jboss-eap7-nosql-javaee-docker
+#riginally from: http://blog.couchbase.com/2015/december/jboss-eap7-nosql-javaee-docker
 
 # Use latest jboss/base-jdk:8 image as the base
 FROM jboss/base-jdk:8
@@ -26,5 +26,5 @@ EXPOSE 8080 9990 4447 9999
 
 # Set the default command to run on boot
 # This will boot JBoss EAP in the standalone mode and bind to all interface
-CMD ["/opt/jboss/jboss-eap-6.4/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
+CMD ["/opt/jboss/jboss-eap-6.1.0/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
 
