@@ -12,7 +12,7 @@ ENV JBOSS_HOME /opt/jboss/jboss-eap-6.4/
 # Add the JBoss distribution to /opt, and make jboss the owner of the extracted zip content
 # Make sure the distribution is available from a well-known place
 RUN cd $HOME \
-    && curl -o https://access.redhat.com/cspdownload/6005f0cceb6dae4d712cd9cb266e9675/5811038e/JBEAP-6.1.0/jboss-eap-6.1.0.zip
+    && curl https://access.redhat.com/cspdownload/6005f0cceb6dae4d712cd9cb266e9675/5811038e/JBEAP-6.1.0/jboss-eap-6.1.0.zip \
    # && sha1sum jboss-eap-$JBOSS_VERSION.zip | grep $JBOSS_SHA1 \
     && unzip jboss-eap-$JBOSS_VERSION.zip \
     && rm jboss-eap-$JBOSS_VERSION.zip
