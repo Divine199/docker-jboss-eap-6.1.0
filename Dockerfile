@@ -1,5 +1,5 @@
 FROM jboss/base-jdk:7
-MAINTAINER Abel Luque
+MAINTAINER Divine chamoh
 
 # Set the JBOSS_VERSION env variable
 ENV JBOSS_HOME /opt/jboss/
